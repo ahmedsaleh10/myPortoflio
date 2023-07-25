@@ -60,10 +60,103 @@ a {
 }
 
 .container {
-    width: 750px;
-    max-width: 100%;
-    margin: 0 auto;
-    padding-left: 16px;
-    padding-right: 16px;
+  width: 750px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
-  
+
+/* Header Section */
+
+header {
+  padding: 40px 16px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+header .container strong {
+  color: #266dd3;
+}
+header .container a {
+  font-size: 16px;
+  border: 1px solid #266dd3;
+  border-radius: 22px;
+  padding: 8px 16px;
+}
+header .container a.download-btn {
+  background-color: #266dd3;
+  color: white;
+  font-size: 16px;
+}
+header .container a.contact-btn {
+  margin-left: 16px;
+  color: #266dd3;
+  font-size: 16px;
+  background: transparent;
+}
+header .container img {
+  border-radius: 50%;
+  width: 180px;
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2), 0 0 0 7px #f2f2f2,
+    0 0px 16px 14px #f8f8f8;
+  height: 180px;
+  object-fit: contain;
+  animation: image-animation 2s;
+}
+
+header .container .header-text h2 {
+  color: transparent;
+  position: relative;
+  height: 25px;
+}
+
+header .container .header-text h2::before {
+  content: attr(data-text);
+  position: absolute;
+  color: #726f77;
+  border-right: 3px solid #726f77;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: title-animation 3.5s linear infinite;
+  height: 100%;
+}
+
+/* Header Animations */
+@keyframes image-animation {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes title-animation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/*Header Media Querys */
+@media screen and (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .container .image {
+    order: 1;
+  }
+  header .container .header-text {
+    order: 2;
+    text-align: center;
+  }
+}
