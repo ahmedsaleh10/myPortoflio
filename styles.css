@@ -343,3 +343,16 @@ header {
     font-size: 14px;
   }
 }
+
+/* My Skills Section */
+ul.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  ul.technologies li img {
+    height: 48px;
+    width: 48px;
+  }
