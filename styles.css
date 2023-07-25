@@ -425,3 +425,27 @@ ul.technologies {
     transform: scale(1.15);
     transition-duration: 0.5s;
   }
+
+  /*Footer Section */
+  footer {
+    padding: 40px 0;
+  }
+
+  footer .section-description {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .contact-section {
+    background-color: #742dd2;
+    text-align: center;
+    color: white;
+  }
+  .contact-section a {
+    background-color: white;
+    color: #742dd2;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 22px;
+  }
+  
