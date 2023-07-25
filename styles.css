@@ -356,3 +356,51 @@ ul.technologies {
     height: 48px;
     width: 48px;
   }
+
+/* My Project Section */
+.projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .projects .project {
+    border: 16px solid #266dd3;
+    border-radius: 22px;
+    position: relative;
+    height: 250px;
+    width: 32%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .projects .project:hover {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.07);
+    transition-duration: 1s;
+  }
+  .projects .project a {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #266dd3;
+    color: #ffffff;
+    height: 32px;
+    font-size: 16px;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  .project {
+    display: flex;
+  }
+  .project img {
+    width: 100%;
+  }
+
+  /* Projects Media Querys */
+  @media screen and (max-width: 768px) {
+    .projects .project {
+      width: 100%;
+      margin: 8px 0;
+    }
+  }
