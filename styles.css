@@ -23,6 +23,14 @@ section {
   background: transparent;
 }
 
+::-webkit-scrollbar-thumb {
+  background: #742dd2;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
 * {
   box-sizing: border-box;
 }
