@@ -150,6 +150,7 @@ header .container .header-text h2::before {
   white-space: nowrap;
   animation: title-animation 3.5s linear infinite;
   height: 100%;
+  left: 0px;
 }
 
 /* Header Animations */
